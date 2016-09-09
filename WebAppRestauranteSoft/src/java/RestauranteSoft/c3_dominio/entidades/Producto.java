@@ -26,6 +26,28 @@ public class Producto {
     public static final String TIPO_MENU = "MENU";
     public static final String TIPO_BEBIDA = "BEBIDA";
 
+    public Producto(int productoid, String descripcion, String tipo, int stock, double precio, String estado) {
+        this.productoid = productoid;
+        this.descripcion = descripcion;
+        this.tipo = tipo;
+        this.stock = stock;
+        this.precio = precio;
+        this.estado = estado;
+    }
+
+    public Producto(String descripcion, String tipo, int stock, double precio, String estado) {
+        this.descripcion = descripcion;
+        this.tipo = tipo;
+        this.stock = stock;
+        this.precio = precio;
+        this.estado = estado;
+    }
+
+    public Producto() {
+    }
+    
+
+        
     public int getProductoid() {
         return productoid;
     }
